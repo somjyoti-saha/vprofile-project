@@ -80,7 +80,7 @@ pipeline {
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
-                    groupId: 'QA'
+                    groupId: 'QA',
                     version: "${env.BUILD_ID}",
                     repository: "${RELEASE_REPO}",
                     credentialsId: "${NEXUS_LOGIN}",
