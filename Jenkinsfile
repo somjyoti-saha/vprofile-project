@@ -22,7 +22,7 @@ pipeline {
     stages {
         stage('Build Job') {
             steps {
-                sh 'maven -s setting.xml -DskipTests install'
+                sh 'mvn -s setting.xml -DskipTests install'
             }
         }
 
